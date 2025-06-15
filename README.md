@@ -110,3 +110,7 @@ and here it is:
  	#put($result());
  	#put([.n]);
   	#halt();
+
+---
+
+Currently, the language interpreter will be impermented in Lua, and in the future, it will I will also made one in C
