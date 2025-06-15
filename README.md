@@ -78,8 +78,6 @@ and here it is:
 		$line() : #line();
 		$line() : $line() + 3;
 		#goto($add());
-		#put($result());
-		#halt();
 	};
 	
 	!when($operand() = [-])
@@ -87,8 +85,6 @@ and here it is:
 		$line() : #line();
 		$line() : $line() + 3;
 		#goto($sub());
-		#put($result());
-		#halt();
 	};
 
 	!when($operand() = [*])
@@ -96,8 +92,6 @@ and here it is:
 		$line() : #line();
 		$line() : $line() + 3;
 		#goto($mul());
-		#put($result());
-		#halt();
 	};
 	
 	!when($operand() = [/])
@@ -105,8 +99,6 @@ and here it is:
 		$line() : #line();
 		$line() : $line() + 3;
 		#goto($div());
-		#put($result());
-		#halt();
 	};
 	
 	!when($operand() = [%])
@@ -114,6 +106,7 @@ and here it is:
 		$line() : #line();
 		$line() : $line() + 3;
 		#goto($mod());
-		#put($result());
-		#halt();
 	};
+ 	#put($result());
+ 	#put([.n]);
+  	#halt();
